@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">  
+     
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="shahd sherif">
+    <meta name="describtion" content="this page contains bambis cartoon  ">
+    <title>bambii</title>
+    <link rel ="icon" href="imag/iconn.jpg" type="imag/x-icon">
+    <link rel ="stylesheet" href="style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    <section class="header">
+        <nav>
+            <!-- <a href="index.html"><img src="imag/shosho.png"></a> -->
+          <div class="nav-links" id="navlinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                        <li><a href= > Home </a></li>
+                        <!-- about us page -->
+                        <li><a href=" " target="_blank"><abbr title="Who We are " > About Us </abbr></a></li>
+                        <li><a href="    ">Creat account / sign in</a></li>
+                        <li><a href="https://hdtoday.tv/search/bambi" target="_blank">Movie link </a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu"></i>
+        </nav>
+ <div class="text-box">
+    <h1>Bambi</h1>
+    <p>of course, the 1942 Walt Disney classic “Bambi.” Perhaps more than any other movie made for children, it is remembered chiefly 
+        for its moments of terror: not only the killing of the hero's mother but the forest fire that threatens all
+         the main characters with annihilation.
+
+    </p>
+    <a href="https://hdtoday.tv/search/bambi" class="he">Tap To Watch !</a>
+ </div>
+    
+    </section>
+<br>
+<br>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="imag/fff.jpeg" style="width:100%">
+          <div class="text">Bambi</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="imag/Screenshot (1).png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="imag/Screenshot (6).png" style="width:100%">
+          <div class="text">bambi</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="imag/fr.jpeg" style="width:100%">
+            <div class="text">frinds</div>
+          </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+     
+    <section class="sumary">
+        <h1>story</h1>
+        &nbsp;&nbsp;&nbsp;<p>
+             It's spring, and all the animals of the forest are excited by the forest's latest birth, 
+             a buck fawn his mother has named Bambi. The animals are more excited than usual as Bambi's lineage means he will inherit the title of prince of the forest.
+             Along with his mother, Bambi navigates through life with the help of his similarly aged friends, Thumper, 
+             a rabbit kit who needs to be continually reminded by his mother of all the lessons his father has taught him about how to live as a rabbit properly, and Flower,
+             a skunk kit who likes his name. As different animals, they have their own issues and challenges which may not translate to the others. Being similarly aged, Bambi, 
+             Thumper and Flower may have to experience the uncharted phases of their lives without the knowledge or wisdom unless gleaned from those who have gone through them before.
+             Bambi has to learn early that the lives of deer and of many of the other forest animals are not without their inherent dangers, for deer especially in the beautiful albeit exposed meadow.
+             Bambi will also find that his ascension to prince of the forest is not a guarantee as other buck deer and situations may threaten that ascension.
+        </p>  
+
+
+<br>
+<br><div class="v">
+        <video width="1000" height="740" controls>
+          <source src="video_2022-11-04_01-11-12.mp4" type="video/mp4">
+          <source src="video_2022-11-04_01-11-12.mp4" type="video/ogg">
+        
+        </video>  
+
+      </div>
+    
+   
+    </section>
+ <hr>
+ <p> &nbsp;&nbsp;&nbsp; &lt;&lt;&lt;&copy; SHAHD SHERIF / SIM deparmnt &gt;&gt;&gt;</p>
+
+
+
+
+    
+         
+
+
+
+     <!-- java script toggle menu-->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+       navlinks.style.right="0"; 
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+  
+</body>
+</html>
